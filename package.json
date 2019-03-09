@@ -1,0 +1,18 @@
+{
+   "name": "postgres-full-text-search",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "@types/node": "^11.11.0",
+      "ts-node": "8.0.3",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "pg": "^7.3.0",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.2.14"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts"
+   }
+}
