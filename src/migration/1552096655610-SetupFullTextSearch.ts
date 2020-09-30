@@ -3,7 +3,7 @@ import { MigrationInterface, QueryRunner } from "typeorm";
 export class SetupFullTextSearch1552096655610 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<any> {
     await queryRunner.query(`
-    set document_with_weights = setweight(to_tsvector(name), 'A') ||
+    update card set document_with_weights = setweight(to_tsvector(name), 'A') ||
   setweight(to_tsvector(artist), 'B') ||
     setweight(to_tsvector(coalesce(text, '')), 'C');
 
